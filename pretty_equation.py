@@ -12,24 +12,28 @@
 from operator import eq
 
 
-A = int(input("Please enter the coefficient A:"))
-B = int(input("Please enter the coefficient B:"))
-C = int(input("Please enter the coefficient C:"))
+A = int(input("Please enter the coefficient A: "))
+B = int(input("Please enter the coefficient B: "))
+C = int(input("Please enter the coefficient C: "))
 
 equation = ""
 
 if A == -1: equation += "-x^2 "
 elif A == 1: equation += "x^2 "
+elif A == 0: break
 else: equation += str(A)+"x^2 "
 
 if B == -1: equation += "- x "
 elif B == 1: equation += "+ x "
 elif B>0: equation += "+ "+str(abs(B))+"x "
+elif B == 0: break
 else: equation += "- "+str(abs(B))+"x "
 
 if C >0: equation+= "+ "+str(C)
+elif C == 0: break
 else: equation += str(C)
 
+equation += " = 0"
 
 print("The quadratic equation is "+ equation)# Output of equation
 
