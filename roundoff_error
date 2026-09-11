@@ -49,7 +49,7 @@ if abs(z - y) < TOL_1:
 else: 
     print(f"y and z are not equal within tolerance of {TOL_1}")
     
-############ Part A ############
+############ Part C ############
 m = 0.1 
 print(f"m = {m}")
 n = 3 * m
