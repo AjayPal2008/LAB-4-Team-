@@ -11,7 +11,7 @@
 # Date:         11 September 2026
 #
   
-# Part A  
+############ Part A ############ 
 a = 1 / 7
 print(f"a = {a}")
 b = a * 7 
@@ -34,7 +34,7 @@ print(f"z = x * 3 * x = {z}")
 # the value of y is 1.0
 # the value of z is .99999
 
-# Part B
+############ Part B ############
 TOL = 1e-10
 # check if b and f are equal within specified tolerances
 if abs(b -f) < TOL:
@@ -49,7 +49,7 @@ if abs(z - y) < TOL_1:
 else: 
     print(f"y and z are not equal within tolerance of {TOL_1}")
     
-# Part C
+############ Part A ############
 m = 0.1 
 print(f"m = {m}")
 n = 3 * m
