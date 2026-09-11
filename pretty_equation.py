@@ -20,17 +20,17 @@ equation = ""
 
 if A == -1: equation += "-x^2 "
 elif A == 1: equation += "x^2 "
-elif A == 0: break
+elif A == 0: pass
 else: equation += str(A)+"x^2 "
 
 if B == -1: equation += "- x "
 elif B == 1: equation += "+ x "
 elif B>0: equation += "+ "+str(abs(B))+"x "
-elif B == 0: break
+elif B == 0: pass
 else: equation += "- "+str(abs(B))+"x "
 
 if C >0: equation+= "+ "+str(C)
-elif C == 0: break
+elif C == 0: pass
 else: equation += str(C)
 
 equation += " = 0"
