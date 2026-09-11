@@ -10,13 +10,6 @@
 # Assignment:   Lab Topic 4 (Team)
 # Date:         11 September 2026
 #
-
-TOL = 1e-10
-# check if b and f are equal within specified tolderance
-if abs(b -f) < TOL:
-    print(f"b and f are equal within tolderance of {TOL}")
-else: 
-    print(f"b and f are not equal with tolerance of {TOL}")
     
 a = 1 / 7
 print(f"a = {a}")
@@ -40,3 +33,9 @@ print(f"z = x * 3 * x = {z}")
 # the value of y is 1.0
 # the value of z is .99999
 
+TOL = 1e-10
+# check if b and f are equal within specified tolderance
+if abs(b -f) < TOL:
+    print(f"b and f are equal within tolderance of {TOL}")
+else: 
+    print(f"b and f are not equal with tolerance of {TOL}")
