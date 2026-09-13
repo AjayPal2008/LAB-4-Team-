@@ -10,51 +10,21 @@
 # Assignment:   Lab Topic 3 (Team)/(optional)
 # Date:         11 September 2026
 from operator import eq
-
-a = int(input("Please enter the coefficient A: "))
-b = int(input("Please enter the coefficient B: "))
-c = int(input("Please enter the coefficient C: "))
+A = int(input("Please enter the coefficient A:"))
+B = int(input("Please enter the coefficient B:"))
+C = int(input("Please enter the coefficient C:"))
 
 equation = ""
 
-if a != 0:
-    if abs(a) == 1:
-        a_term = "x^2"
-    else:
-        a_term = str(abs(a)) + "x^2"
-        
-    if a < 0:
-        equation = "- " + a_term
-    else:
-        equation = a_term
-        
-if b != 0:
-    if abs(b) == 1:
-        b_term = "x"
-    else:
-        b_term = str(abs(b)) + "x"
-        
-    if equation == "":
-        if b < 0:
-            equation = "- " + b_term
-        else: 
-            equation = b_term
-    elif b < 0:
-        equation += " - " + b_term
-    else: 
-        equation += " + " + b_term
+if A == -1: equation += "-x^2 "
+elif A == 1: equation += "x^2 "
+else: equation += str(A)+"x^2 "
     
-if c != 0:
-    if equation == "":
-        equation = str(c)
-    elif c < 0:
-        equation += " - " + str(abs(c))
-    else: 
-        equation += " + " + str(c)
-        
-if equation == "":
-    equation = "0"
+if B == -1: equation += "- x "
+elif B == 1: equation += "+ x "
+elif B>0: equation += "+ "+str(abs(B))+"x "
+else: equation += "- "+str(abs(B))+"x "
+if C >0: equation+= "+ "+str(C)
     
-print("the quadratic equation is", equation, "= 0")
-    print("The quadratic equation is "+ equation) # Output of equation
-
+else: equation += str(C)
+print("The quadratic equation is "+ equation)# Output of equation
