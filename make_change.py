@@ -10,7 +10,6 @@
 # Assignment:   Lab Topic 4 (Team)
 # Date:         14 September 2026
 #
-
 nickel = 0.05
 quarter = 0.25
 dime = 0.10
