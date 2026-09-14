@@ -23,4 +23,4 @@ print("a or b or c: ",a or b or c)
 ############ Part C ############ 
 XOR1 = a!=b
 print("XOR:",XOR1)
-print(not((a==b and b!=c) or (a!=b and b==c)) or (a==b and b==c and c == true)) 
+print((b==c) or (b==a) or (a==c) or not(a==b and b==c and c==False))
