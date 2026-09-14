@@ -54,5 +54,5 @@ if c != 0:
 if equation == "":
     equation = "0"
     
-print("the quadratic equation is", equation, "= 0")
+print("The quadratic equation is", equation, "= 0")
     
