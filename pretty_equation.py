@@ -1,3 +1,5 @@
+# By submitting this assignment, I agree to the following:
+#   "Aggies do not lie, cheat, or steal, or tolerate those who do."
 #   "I have not given or received any unauthorized aid on this assignment."
 #
 # Names:        Micah Kadiri
@@ -5,8 +7,8 @@
 #               Ajay Palanisamy
 #               Hudson Dobbs
 # Section:      508
-# Assignment:   Lab Topic 3 (Team)/(optional)
-# Date:         11 September 2026
+# Assignment:   Lab Topic 4 (Team)
+# Date:         14 September 2026
 
 from operator import eq
 
@@ -54,5 +56,5 @@ if c != 0:
 if equation == "":
     equation = "0"
     
-print("The quadratic equation is", equation, "= 0")
+print("The quadratic equation is", equation, "= 0") # Output for equation
     
