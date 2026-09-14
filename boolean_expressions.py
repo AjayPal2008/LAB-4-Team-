@@ -12,15 +12,15 @@
 
 ############ Part A ############ 
 print("Enter True or False for a: ")
-a = input().lower() == "true" or input().lower() == "false"
+a =  input().lower() == "t" or input().lower() == "f" or input().lower() == "true" or input().lower() == "false"
 print("Enter True or False for b: ")
-b = input().lower() == "true" or input().lower() == "false"
+b = input().lower() == "t" or input().lower() == "f" or input().lower() == "true" or input().lower() == "false"
 print("Enter True or False for c: ")
-c = input().lower() == "true" or input().lower() == "false"
+c = input().lower() == "t" or input().lower() == "f" or input().lower() == "true" or input().lower() == "false"
 ############ Part B ############ 
 print("a and b and c: ",a and b and c)
 print("a or b or c: ",a or b or c)
 ############ Part C ############ 
 XOR1 = a!=b
-print("XOR",XOR1)
-############ Part D ############ 
+print("XOR:",XOR1)
+print(not((a==b and b!=c) or (a!=b and b==c)) or (a==b and b==c and c == true)) 
