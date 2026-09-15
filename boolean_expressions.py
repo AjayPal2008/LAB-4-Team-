@@ -10,18 +10,6 @@
 # Assignment:   Lab Topic 3 (Team)/(optional)
 # Date:         11 September 2026
 
-# By submitting this assignment, I agree to the following:
-#   "Aggies do not lie, cheat, or steal, or tolerate those who do."
-#   "I have not given or received any unauthorized aid on this assignment."
-#
-# Names:        Micah Kadiri
-#               Benjamin Hatch
-#               Ajay Palanisamy
-#               Hudson Dobbs
-# Section:      508
-# Assignment:   Lab Topic 3 (Team)/(optional)
-# Date:         11 September 2026
-
 ############ Part A ############
 response_a = input("Enter True or False for a: ").lower()
 a = response_a == "t" or response_a == "true"
