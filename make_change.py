@@ -24,19 +24,20 @@ dimes, change = divmod(change, dime)
 nickels, change = divmod(change, nickel)
 pennies, change = divmod(round(change, 2), penny)
 #Variable style and lettering
-nickelvar = "nickels"
-if nickelvar == 1:
-    nicklevar = "nickel"
-quartervar = "quarters"
-if quartervar == 1:
-    quartervar = "quarter"
-dimevar = "dimes"
-if dimevar == 1:
-    dimevar = "dime"
-pennyvar = "pennies"
-if pennyvar == 1:
-    pennyvar = "penny"
-    
 print(f"You received ${x - y:.2f} in change. That is...")
-print(f"{int(quarters)} {quartervar} \n{int(dimes)} {dimevar} "
-	f"\n{int(nickels)} {nickelvar} \n{int(pennies)} {pennyvar}")
+if quarters == 1:
+    print("1 quarter")
+else:
+    print(f"{quarters:.0f}", "quarters")
+if dimes == 1:
+    print("1 dime")
+else:
+    print(f"{dimes:.0f}", "dimes")
+if nickels == 1:
+    print("1 nickel")
+else:
+    print(f"{nickels:.0f}", "nickels")
+if pennies == 1:
+    print("1 penny")
+else:
+    print(f"{pennies:.0f}", "pennies")
